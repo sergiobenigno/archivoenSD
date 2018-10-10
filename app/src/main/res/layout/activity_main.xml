@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:padding="16dp"
+    android:rowCount="8"
+    tools:context=".MainActivity">
+
+    <TextView android:layout_columnSpan="2" android:text="CAPTURA DATOS"
+        android:layout_gravity="center_horizontal" style="@style/etiqueta"/>
+    <TextView android:text="nombre:" style="@style/etiqueta"/>
+    <EditText android:ems="10" style="@style/campotexto"
+        android:id="@+id/nom"/>
+    <TextView android:text="Domicilio:" style="@style/etiqueta"/>
+    <EditText android:ems="10" style="@style/campotexto"
+        android:id="@+id/dom"/>
+    <TextView android:text="Edad:" style="@style/etiqueta"/>
+    <EditText android:ems="10" style="@style/campotexto"
+        android:id="@+id/edad"/>
+    <TextView android:text="Sueldo:" style="@style/etiqueta"/>
+    <EditText android:ems="10" style="@style/campotexto"
+        android:id="@+id/sue"/>
+
+    <LinearLayout android:layout_columnSpan="2"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:onClick="guardarArchivo"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leer"
+            android:onClick="abrirArchivo"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:onClick="limpiarCampos"/>
+    </LinearLayout>
+    <Button android:text="SD"
+        android:onClick="validarSD"/>
+
+</GridLayout>
