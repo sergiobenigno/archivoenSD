@@ -30,12 +30,12 @@
         <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Guardar"
-            android:onClick="guardarArchivo"/>
+            android:onClick="guardarArchivoSD"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Leer"
-            android:onClick="abrirArchivo"/>
+            android:onClick="abrirArchivoSD"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
